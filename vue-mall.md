@@ -47,3 +47,4 @@
 
 ## 04---项目开发-vue.config和editorconfig
 
+文件配置
