@@ -43,8 +43,41 @@
 
 ## 03---项目开发-css文件的引入
 
+- 引入normalize.css文件，可以在github上搜索clone下来，并引入；
+- :root是获取根元素（html）的一种方式
+
 ![1](./pic/引入CSS.jpg)
 
 ## 04---项目开发-vue.config和editorconfig
 
-文件配置
+- 文件配置
+
+```javascript
+
+module.exports = {
+  configureWebpack: {
+    resolve: {
+      alias: {
+        //默认别名
+          '@': 'src'
+      }
+    }
+  }
+}
+```
+
+```javascript
+module.exports = {
+  configureWebpack: {
+    resolve: {
+      alias: {
+        'assets': '@/assets',
+        'common': '@/common',
+        'components': '@/components',
+        'network': '@/network'
+      }
+    }
+  }
+}
+```
+

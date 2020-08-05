@@ -1,4 +1,4 @@
-# learnmall
+# supermall
 
 ## Project setup
 ```
