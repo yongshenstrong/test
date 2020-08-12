@@ -81,3 +81,12 @@ module.exports = {
 }
 ```
 
+## 05---项目开发-小图标的修改及路径问题
+
+- 打包后，public文件夹的内容会被原封不动的打包到dist文件夹中
+
+```
+<link rel="icon" href="<%= BASE_URL %>favicon.ico">
+```
+
+这段代码有这种语法（<%= BASE_URL %>），这是jsp语法，为了方便查找icon图标路径；不影响打包。
